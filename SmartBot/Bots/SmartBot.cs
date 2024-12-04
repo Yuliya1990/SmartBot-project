@@ -58,7 +58,7 @@ namespace SmartBots.Bots
                     if (time == null)
                         timeText = "No me ha sido posible detectar el tiempo en tu frase";
                     else
-                        timeText = "Entendido, voy a poner despertador a las" + time;
+                        timeText = "Entendido, voy a poner despertador a las " + time;
 
                     var timeMessage = MessageFactory.Text(timeText, timeText, InputHints.IgnoringInput);
                     await turnContext.SendActivityAsync(timeMessage, cancellationToken);
@@ -84,7 +84,7 @@ namespace SmartBots.Bots
                     if (cancion == null)
                         cancionText = "No me ha sido posible detectar la canción en tu frase";
                     else 
-                        cancionText = "Entendido, voy a poner canción" + cancion;
+                        cancionText = "Entendido, voy a poner canción " + cancion;
 
                     var cancionMessage = MessageFactory.Text(cancionText, cancionText, InputHints.IgnoringInput);
                     await turnContext.SendActivityAsync(cancionMessage, cancellationToken);
